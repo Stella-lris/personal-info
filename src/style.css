@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background-image: radial-gradient(
+      1200px 500px at 50% -5%,
+      rgba(255, 255, 255, 0.7),
+      transparent 70%
+    );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-color 0.3s;
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Segoe UI",
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  padding: 8px 18px;
+  border: 1px solid rgba(111, 158, 141, 0.35);
+  border-radius: 10px;
+  background-color: #6f9e8d;
+  color: #fff;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(111, 158, 141, 0.22);
+  transition: background-color 0.2s, box-shadow 0.2s, border-color 0.2s,
+    transform 0.2s;
+}
+
+button:hover {
+  background-color: #5a8a79;
+  border-color: rgba(111, 158, 141, 0.5);
+  box-shadow: 0 6px 18px rgba(111, 158, 141, 0.3);
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #4d7868;
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(111, 158, 141, 0.2);
+}
+
+input[type="text"]:not(.el-input__inner) {
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-family: inherit;
+  color: #444;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:not(.el-input__inner):focus {
+  border-color: #6f9e8d;
+  box-shadow: 0 0 0 3px rgba(111, 158, 141, 0.18);
+}
+img {
+  vertical-align: middle;
+}
+
+::selection {
+  background: rgba(111, 158, 141, 0.25);
+}
+
+.page-card {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.18);
+}
+
+.page-card h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #4d7868;
+  font-weight: bold;
+}

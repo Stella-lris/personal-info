@@ -1,0 +1,9 @@
+# 依赖：可以用 npm install 重新装
+node_modules
+
+# 构建产物：服务器上会重新 build
+dist
+
+# 本地环境变量 / 系统文件
+*.local
+.DS_Store
